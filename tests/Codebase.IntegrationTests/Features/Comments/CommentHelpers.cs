@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Conduit.Features.Comments;
-using Conduit.IntegrationTests.Features.Users;
+using Codebase.Features.Comments;
+using Codebase.IntegrationTests.Features.Users;
 
-namespace Conduit.IntegrationTests.Features.Comments
+namespace Codebase.IntegrationTests.Features.Comments
 {
     public static class CommentHelpers
     {

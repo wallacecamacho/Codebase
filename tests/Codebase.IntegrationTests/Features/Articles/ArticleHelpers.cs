@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using Conduit.IntegrationTests.Features.Users;
-using Conduit.Features.Articles;
+using Codebase.IntegrationTests.Features.Users;
+using Codebase.Features.Articles;
 
-namespace Conduit.IntegrationTests.Features.Articles
+namespace Codebase.IntegrationTests.Features.Articles
 {
     public static class ArticleHelpers
     {

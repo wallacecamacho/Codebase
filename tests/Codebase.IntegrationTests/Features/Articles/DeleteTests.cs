@@ -2,11 +2,11 @@
 using System.Threading.Tasks;
 using Xunit;
 using Microsoft.EntityFrameworkCore;
-using Conduit.Features.Articles;
-using Conduit.IntegrationTests.Features.Comments;
-using Conduit.IntegrationTests.Features.Users;
+using Codebase.Features.Articles;
+using Codebase.IntegrationTests.Features.Comments;
+using Codebase.IntegrationTests.Features.Users;
 
-namespace Conduit.IntegrationTests.Features.Articles
+namespace Codebase.IntegrationTests.Features.Articles
 {
     public class DeleteTests : SliceFixture
     {
@@ -92,9 +92,9 @@ namespace Conduit.IntegrationTests.Features.Articles
             var slug = dbArticle.Slug;
 
             // create article comment
-            var createCommentCmd = new Conduit.Features.Comments.Create.Command()
+            var createCommentCmd = new Codebase.Features.Comments.Create.Command()
             {
-                Comment = new Conduit.Features.Comments.Create.CommentData()
+                Comment = new Codebase.Features.Comments.Create.CommentData()
                 {
                     Body = "article comment"
                 },

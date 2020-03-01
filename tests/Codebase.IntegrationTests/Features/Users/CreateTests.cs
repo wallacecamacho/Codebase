@@ -1,18 +1,18 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Conduit.Features.Users;
-using Conduit.Infrastructure.Security;
+using Codebase.Features.Users;
+using Codebase.Infrastructure.Security;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace Conduit.IntegrationTests.Features.Users
+namespace Codebase.IntegrationTests.Features.Users
 {
     public class CreateTests : SliceFixture
     {
         [Fact]
         public async Task Expect_Create_User()
         {
-            var command = new Conduit.Features.Users.Create.Command()
+            var command = new Codebase.Features.Users.Create.Command()
             {
                 User = new Create.UserData()
                 {

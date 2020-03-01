@@ -1,9 +1,9 @@
-﻿using Conduit.Infrastructure;
+﻿using Codebase.Infrastructure;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Conduit.IntegrationTests
+namespace Codebase.IntegrationTests
 {
     public class StubCurrentUserAccessor : ICurrentUserAccessor
     {

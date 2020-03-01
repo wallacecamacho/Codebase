@@ -1,11 +1,11 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Conduit.Features.Articles;
-using Conduit.Infrastructure;
+using Codebase.Features.Articles;
+using Codebase.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Xunit;
 
-namespace Conduit.IntegrationTests.Features.Articles
+namespace Codebase.IntegrationTests.Features.Articles
 {
     public class EditTests : SliceFixture
     {

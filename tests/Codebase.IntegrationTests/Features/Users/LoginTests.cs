@@ -1,11 +1,11 @@
 ﻿using System;
 using System.Threading.Tasks;
-using Conduit.Domain;
-using Conduit.Features.Users;
-using Conduit.Infrastructure.Security;
+using Codebase.Domain;
+using Codebase.Features.Users;
+using Codebase.Infrastructure.Security;
 using Xunit;
 
-namespace Conduit.IntegrationTests.Features.Users
+namespace Codebase.IntegrationTests.Features.Users
 {
     public class LoginTests : SliceFixture
     {
@@ -22,7 +22,7 @@ namespace Conduit.IntegrationTests.Features.Users
             };
             await InsertAsync(person);
 
-            var command = new Conduit.Features.Users.Login.Command()
+            var command = new Codebase.Features.Users.Login.Command()
             {
                 User = new Login.UserData()
                 {

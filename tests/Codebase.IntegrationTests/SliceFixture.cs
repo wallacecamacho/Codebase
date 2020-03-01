@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
 using System.Threading.Tasks;
-using Conduit.Infrastructure;
+using Codebase.Infrastructure;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Conduit.IntegrationTests
+namespace Codebase.IntegrationTests
 {
     public class SliceFixture : IDisposable
     {
@@ -31,7 +31,7 @@ namespace Conduit.IntegrationTests
 
             DbContextOptionsBuilder builder = new DbContextOptionsBuilder();
             builder.UseInMemoryDatabase(DbName);
-            services.AddSingleton(new ConduitContext(builder.Options));
+            services.AddSingleton(new CodebaseContext(builder.Options));
 
             startup.ConfigureServices(services);
 
@@ -41,9 +41,9 @@ namespace Conduit.IntegrationTests
             _scopeFactory = _provider.GetService<IServiceScopeFactory>();
         }
 
-        public ConduitContext GetDbContext()
+        public CodebaseContext GetDbContext()
         {
-            return _provider.GetRequiredService<ConduitContext>();
+            return _provider.GetRequiredService<CodebaseContext>();
         }
 
         public void Dispose()
@@ -87,14 +87,14 @@ namespace Conduit.IntegrationTests
             });
         }
 
-        public Task ExecuteDbContextAsync(Func<ConduitContext, Task> action)
+        public Task ExecuteDbContextAsync(Func<CodebaseContext, Task> action)
         {
-            return ExecuteScopeAsync(sp => action(sp.GetService<ConduitContext>()));
+            return ExecuteScopeAsync(sp => action(sp.GetService<CodebaseContext>()));
         }
 
-        public Task<T> ExecuteDbContextAsync<T>(Func<ConduitContext, Task<T>> action)
+        public Task<T> ExecuteDbContextAsync<T>(Func<CodebaseContext, Task<T>> action)
         {
-            return ExecuteScopeAsync(sp => action(sp.GetService<ConduitContext>()));
+            return ExecuteScopeAsync(sp => action(sp.GetService<CodebaseContext>()));
         }
 
         public Task InsertAsync(params object[] entities)
