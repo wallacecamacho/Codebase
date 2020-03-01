@@ -11,7 +11,8 @@ jobs:
           name: Install Cake
           command: |
             dotnet tool install -g Cake.Tool
-            echo 'export PATH=$PATH:/root/.dotnet/tools' >> $BASH_ENV
+            export PATH=$PATH:/root/.dotnet/tools
+            echo '$PATH' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: Build
