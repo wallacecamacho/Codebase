@@ -13,11 +13,11 @@ jobs:
             dotnet tool install -g Cake.Tool
             cat << \EOF >> ~/.bash_profile
             # Add .NET Core SDK tools
-            export PATH="$PATH:/root/.dotnet/tools"
+            export PATH="$PATH:/root/.dotnet/tools" >> $BASH_ENV
             EOF
             source ~/.bash_profile
             #echo 'export PATH=$PATH:/root/.dotnet/tools' >> $BASH_ENV
-            #source $BASH_ENV
+            source $BASH_ENV
       - run:
           name: Build
           command: dotnet cake build.cake --runtime=linux-x64
