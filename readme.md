@@ -55,4 +55,4 @@ The above might work for Docker on Windows
 
 ## Circle CI
 
-[![CircleCI](https://circleci.com/gh/gothinkster/aspnetcore-realworld-example-app.svg?style=svg)](https://circleci.com/gh/gothinkster/aspnetcore-realworld-example-app)
+[![CircleCI](https://circleci.com/gh/wallacecamacho/Codebase.svg?style=svg)](https://circleci.com/gh/wallacecamacho/Codebase)
