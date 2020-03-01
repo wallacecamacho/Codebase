@@ -12,7 +12,7 @@ jobs:
           command: |
             dotnet tool install -g Cake.Tool
             export PATH=$PATH:/root/.dotnet/tools
-            echo '$PATH' >> $BASH_ENV
+            echo '$PATH:/root/.dotnet/tools' >> $BASH_ENV
             source $BASH_ENV
       - run:
           name: Build
