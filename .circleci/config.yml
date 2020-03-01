@@ -16,7 +16,7 @@ jobs:
             EOF
             dotnet tool install -g Cake.Tool
             #echo 'export PATH=$PATH:/root/.dotnet/tools' >> $BASH_ENV
-            #source $BASH_ENV
+            source ~/.bash_profile
       - run:
           name: Build
           command: dotnet cake build.cake --runtime=linux-x64
