@@ -1,0 +1,9 @@
+version: '3'
+services:
+  Codebase:
+    build: .
+    environment:
+     - ASPNETCORE_Codebase_DatabaseProvider=${ASPNETCORE_Codebase_DatabaseProvider}
+     - ASPNETCORE_Codebase_ConnectionString=${ASPNETCORE_Codebase_ConnectionString}
+    ports:
+     - "5000:5000"
