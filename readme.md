@@ -2,7 +2,7 @@
 
 > ### :hammer: ASP.NET Core Codebase exemplo de referência
 
-### [Mundo real](https://github.com/wallacecamacho/Codebase)
+### [Aplicação de Start para exemplos de uso comuns](https://github.com/wallacecamacho/Codebase)
 
 Projeto de referência para ilustrar uma arquitetura de aplicação construída com ASP.NET Core utilizando libs, e executando operações
 de CRUD, autenticação, rotas, paginação e etc.
