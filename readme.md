@@ -1,6 +1,6 @@
 # ![:hammer: Seed - Referência App](logo.png)
 
-> ### :hammer: ASP.NET Core Codebase exemplos do mundo real (CRUD, auth, advanced patterns, etc) that adheres to the [RealWorld](https://github.com/gothinkster/realworld-example-apps) spec and API.
+> ### :hammer: ASP.NET Core Codebase exemplo de referência
 
 ### [Mundo real](https://github.com/wallacecamacho/Codebase)
 
