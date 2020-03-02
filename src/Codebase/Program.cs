@@ -15,7 +15,7 @@ namespace Codebase
             var host = new WebHostBuilder()
                 .UseConfiguration(config)
                 .UseKestrel()
-                .UseUrls($"http://+:5000")
+                .UseUrls($"http://localhost:5000")
                 .UseStartup<Startup>()
                 .Build();
 
