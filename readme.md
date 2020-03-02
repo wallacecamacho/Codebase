@@ -40,7 +40,7 @@ ASP.NET Core com:
   - [Controllers com CQRS e MediatR](https://codeopinion.com/thin-controllers-cqrs-mediatr/)
 - [AutoMapper](http://automapper.org)
 - [Fluent Validation](https://github.com/JeremySkinner/FluentValidation)
-- [Pastas com arquivo sln](https://docs.microsoft.com/pt-br/dotnet/core/tools/dotnet-sln)
+- [Projeto com arquivo sln](https://docs.microsoft.com/pt-br/dotnet/core/tools/dotnet-sln)
 - [Entity Framework Core](https://docs.microsoft.com/en-us/ef/) com SQLite para exemplo de persistência demo purposes. Pode ser facilmente qualquer outra coisa que o EF Core suporte. Aberto para portar para outros ORMs / DBs.
 - Swagger via [Swashbuckle.AspNetCore](https://github.com/domaindrivendev/Swashbuckle.AspNetCore)
 - [Cake](http://cakebuild.net/) para building!
