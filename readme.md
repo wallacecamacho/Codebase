@@ -4,11 +4,8 @@
 
 ### [Mundo real](https://github.com/wallacecamacho/Codebase)
 
-This codebase was created to demonstrate a fully fledged fullstack application built with ASP.NET Core (with Feature orientation) including CRUD operations, authentication, routing, pagination, and more.
-
-We've gone to great lengths to adhere to the ASP.NET Core community styleguides & best practices.
-
-For more information on how to this works with other frontends/backends, head over to the [RealWorld](https://github.com/gothinkster/realworld) repo.
+Projeto de referência para ilustrar uma arquitetura de aplicação construída com ASP.NET Core utilizando libs, e executando operações
+de CRUD, autenticação, rotas, paginação e etc.
 
 # Primeiros passs
 
